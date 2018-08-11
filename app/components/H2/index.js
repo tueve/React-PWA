@@ -1,7 +1,6 @@
-import styled from 'styled-components';
+import React from 'react'
+import Typography from '@material-ui/core/Typography';
 
-const H2 = styled.h2`
-  font-size: 1.5em;
-`;
+const H2 = (props) => <Typography variant="display2" {...props} />
 
 export default H2;

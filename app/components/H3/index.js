@@ -1,7 +1,6 @@
-import React from 'react';
+import React from 'react'
+import Typography from '@material-ui/core/Typography';
 
-function H3(props) {
-  return <h3 {...props} />;
-}
+const H3 = (props) => <Typography variant="display1" {...props} />
 
 export default H3;
