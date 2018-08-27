@@ -6,8 +6,7 @@ import { set } from 'lodash';
 import { combineReducers } from 'redux';
 import { LOCATION_CHANGE } from 'react-router-redux';
 
-import globalReducer from 'containers/App/reducer';
-import languageProviderReducer from 'containers/LanguageProvider/reducer';
+import globalReducer from 'page/App/reducer';
 
 /*
  * routeReducer
@@ -29,9 +28,7 @@ export function routeReducer(state = routeInitialState, action) {
   switch (action.type) {
     /* istanbul ignore next */
     case LOCATION_CHANGE:
-      return set(state,
-        'location', action.payload,
-      );
+      return set(state, 'location', action.payload);
     default:
       return state;
   }
@@ -44,7 +41,6 @@ export default function createReducer(injectedReducers) {
   return combineReducers({
     route: routeReducer,
     global: globalReducer,
-    language: languageProviderReducer,
     ...injectedReducers,
   });
 }

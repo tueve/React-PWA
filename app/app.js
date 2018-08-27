@@ -18,10 +18,10 @@ import createHistory from 'history/createBrowserHistory';
 import 'sanitize.css/sanitize.css';
 
 // Import root app
-import App from 'containers/App';
+import App from 'page/App';
 
 // Import Language Provider
-import LanguageProvider from 'containers/LanguageProvider';
+// import LanguageProvider from 'containers/LanguageProvider';
 
 // Load the favicon and the .htaccess file
 import '!file-loader?name=[name].[ext]!./images/favicon.ico';
@@ -53,11 +53,11 @@ const MOUNT_NODE = document.getElementById('app');
 const render = messages => {
   ReactDOM.render(
     <Provider store={store}>
-      <LanguageProvider messages={messages}>
-        <ConnectedRouter history={history}>
-          <App />
-        </ConnectedRouter>
-      </LanguageProvider>
+      {/* <LanguageProvider messages={messages}> */}
+      <ConnectedRouter history={history}>
+        <App />
+      </ConnectedRouter>
+      {/* </LanguageProvider> */}
     </Provider>,
     MOUNT_NODE,
   );
@@ -67,7 +67,7 @@ if (module.hot) {
   // Hot reloadable React components and translation json files
   // modules.hot.accept does not accept dynamic dependencies,
   // have to be constants at compile-time
-  module.hot.accept(['./i18n', 'containers/App'], () => {
+  module.hot.accept(['./i18n', 'page/App'], () => {
     ReactDOM.unmountComponentAtNode(MOUNT_NODE);
     render(translationMessages);
   });
