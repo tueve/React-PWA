@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
-import { Grid, Button, Hidden, withWidth } from '@material-ui/core';
-import styled from 'styled-components';
-
-const NavItem = styled(Button)`
-  && {
-    width: 100%;
-    font-weight: bold;
-  }
-`;
+import { Grid, Hidden, withWidth } from '@material-ui/core';
+import NavItem from 'atom/NavItem'
 
 class NavBar extends Component {
   render() {
