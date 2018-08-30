@@ -136,6 +136,7 @@ module.exports = options => ({
       atom: path.resolve(process.cwd(), './app/components/atoms'),
       molecule: path.resolve(process.cwd(), './app/components/molecules'),
       organism: path.resolve(process.cwd(), './app/containers/organisms'),
+      layout: path.resolve(process.cwd(), './app/containers/layout'),
       page: path.resolve(process.cwd(), './app/containers/pages'),
     },
   },

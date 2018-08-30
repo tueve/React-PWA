@@ -1,25 +1,12 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 
-import { Grid, withWidth, Hidden } from '@material-ui/core';
-import A from './A';
-import NavBar from './NavBar';
-import BurgerMenu from './BurgerMenu';
-
-import Logo from './logo.png';
-import messages from './messages';
-
-const HeaderWrapper = styled.div`
-  display: flex;
-  width: 100%;
-  background-color: blue;
-`;
-
-const LogoComp = styled.img`
-  width: 120px;
-  height: 120px;
-  margin: 10px 30px;
-`;
+import { Grid, Hidden } from '@material-ui/core';
+import A from 'atom/A';
+import NavBar from 'organism/NavBar';
+import BurgerMenu from 'organism/BurgerMenu';
+import Logo from 'atom/Logo';
+import LogoImg from './logo.png';
 
 /* eslint-disable react/prefer-stateless-function */
 class Header extends React.Component {
@@ -30,7 +17,7 @@ class Header extends React.Component {
           <Grid item xs={3}>
             <Hidden xsDown>
               <A href="/">
-                <LogoComp src={Logo} alt="Logo" />
+                <Logo src={LogoImg} alt="Logo" />
               </A>
             </Hidden>
           </Grid>

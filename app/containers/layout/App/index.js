@@ -14,7 +14,7 @@ import 'typeface-roboto';
 import HomePage from 'page/HomePage/Loadable';
 import NotFoundPage from 'page/NotFoundPage/Loadable';
 import { AppWrapper } from './style';
-// import Header from 'components/Header';
+import Header from 'layout/Header';
 // import Footer from 'components/Footer';
 
 export default function App() {
@@ -26,7 +26,7 @@ export default function App() {
       >
         <meta name="description" content="A React.js Boilerplate application" />
       </Helmet>
-      {/* <Header /> */}
+      <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="" component={NotFoundPage} />
