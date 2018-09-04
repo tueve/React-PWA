@@ -1,0 +1,65 @@
+[debug] [2018-09-02T12:03:05.692Z] ----------------------------------------------------------------------
+[debug] [2018-09-02T12:03:05.694Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\vutue\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2018-09-02T12:03:05.694Z] CLI Version:   4.2.1
+[debug] [2018-09-02T12:03:05.694Z] Platform:      win32
+[debug] [2018-09-02T12:03:05.694Z] Node Version:  v10.8.0
+[debug] [2018-09-02T12:03:05.696Z] Time:          Sun Sep 02 2018 19:03:05 GMT+0700 (Indochina Time)
+[debug] [2018-09-02T12:03:05.696Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-09-02T12:03:05.705Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-09-02T12:03:05.706Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\vutue\Documents\Projects\React PWA
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-09-02T12:03:12.632Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-09-02T12:03:12.632Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2018-09-02T12:03:14.269Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-02T12:03:14.273Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ 
+[debug] [2018-09-02T12:03:15.240Z] <<< HTTP RESPONSE 200
+[info] i  .firebaserc already has a default project, skipping
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[info] +  Database Rules for  have been downloaded to n.
+[info] Future modifications to n will update Database Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2018-09-02T12:03:20.662Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-09-02T12:03:20.663Z] > authorizing via signed-in user
+[debug] [2018-09-02T12:03:20.663Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-09-02T12:03:20.664Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2018-09-02T12:03:20.873Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-02T12:03:20.877Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/pwa-test-9b21b  
+ 
+[debug] [2018-09-02T12:03:21.591Z] <<< HTTP RESPONSE 200
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 

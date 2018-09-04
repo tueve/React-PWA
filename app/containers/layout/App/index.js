@@ -12,6 +12,7 @@ import { Switch, Route } from 'react-router-dom';
 import 'typeface-roboto';
 
 import HomePage from 'page/HomePage/Loadable';
+import Feed from 'page/Feeds/Loadable';
 import NotFoundPage from 'page/NotFoundPage/Loadable';
 import { AppWrapper } from './style';
 import Header from 'layout/Header';
@@ -28,7 +29,8 @@ export default function App() {
       </Helmet>
       <Header />
       <Switch>
-        <Route exact path="/" component={HomePage} />
+        <Route exact path="/" component={Feed} />
+        <Route exact path="/feed" component={Feed} />
         <Route path="" component={NotFoundPage} />
       </Switch>
       {/* <Footer /> */}

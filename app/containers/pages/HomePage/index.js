@@ -22,9 +22,7 @@ export class HomePage extends React.PureComponent {
           />
         </Helmet>
         <div>
-          <p>
-            HOME PAGE
-          </p>
+          <p>HOME PAGE</p>
         </div>
       </article>
     );
