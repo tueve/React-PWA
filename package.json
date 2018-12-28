@@ -46,7 +46,7 @@
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "prettify": "prettier --write",
-    "beauti": "prettier --write",
+    "beautifi": "prettier --write",
     "heroku-postbuild": "npm run build"
   },
   "lint-staged": {
